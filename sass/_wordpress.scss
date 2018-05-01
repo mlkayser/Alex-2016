@@ -1,0 +1,27 @@
+.post, .page {
+   img {
+      border:1px solid grey;
+      
+         @media screen and (max-width: $small) {
+		     display:block;
+		     float:none;
+		     width:100%; 
+		     //height:auto !important;
+		     height:auto;
+		     margin-left:0; margin-right:0;
+		   }
+   }
+   
+   div {
+      //overflow:hidden;
+   }
+}
+
+.alignright {
+   float:right; 
+   margin-left:$spacing; margin-bottom:$spacing;   
+}
+.alignleft {
+   float:left; 
+   margin-right:$spacing; margin-bottom:$spacing;   
+}

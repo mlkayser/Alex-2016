@@ -1,0 +1,35 @@
+$veryLarge: 1400px; $veryLarge: 1520px;
+$large: 1240px;
+$medium: 1024px;
+$medium2: 940px; $medium2: 1150px;
+$small: 700px; $small: 960px;
+$small2: 750px;
+$verySmall: 600px;
+$spacing:20px;
+
+$footer-space: 4em; $footer-space: 3.5em;
+$footer-space-mobile:6em;
+$header-space: 95px; $header-space: 90px;
+
+$link-color:#4F92BB; $link-color:#0593C7;
+$decorazioni-color:#c64f49;
+$kustomite-color:#fd8654;
+
+// CLEARFIX
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+.clear {
+	clear:both;
+}
