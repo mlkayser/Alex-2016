@@ -30,7 +30,7 @@
 			    <?php } else { ?>                
 				    <h1><?php the_title(); ?></h1> 
 	                <?php the_content(); ?>  
-					<?php require('includes/contact-me.php'); ?>  
+					<?php //require('includes/contact-me.php'); ?>  
 					
 				<?php } ?>
 			

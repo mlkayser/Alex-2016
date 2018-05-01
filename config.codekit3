@@ -9,6 +9,27 @@
 	],
 "creatorBuild": "26680",
 "files": {
+	"\/.gitattributes": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.gitattributes",
+		"oF": 0
+		},
+	"\/archive.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive.php",
+		"oF": 0
+		},
+	"\/category-novita.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/category-novita.php",
+		"oF": 0
+		},
 	"\/category.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -17,8 +38,7 @@
 		"oF": 0
 		},
 	"\/config.rb": {
-		"cB": 0,
-		"ft": 8192,
+		"ft": 131072,
 		"oA": 0,
 		"oAP": "\/config.rb",
 		"oF": 0
@@ -506,6 +526,13 @@
 		"oAP": "\/functions.php",
 		"oF": 0
 		},
+	"\/header copy.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/header copy.php",
+		"oF": 0
+		},
 	"\/header.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -513,418 +540,11 @@
 		"oAP": "\/header.php",
 		"oF": 0
 		},
-	"\/images\/alex-2.jpg": {
-		"ft": 16384,
-		"iS": 20202,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/images\/alex-2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/images\/alex-3.jpg": {
-		"ft": 16384,
-		"iS": 21987,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/images\/alex-3.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/images\/alex-small.jpg": {
-		"ft": 16384,
-		"iS": 52262,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/images\/alex-small.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/images\/alex.jpg": {
-		"ft": 16384,
-		"iS": 20567,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/images\/alex.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/images\/alex.png": {
-		"ft": 32768,
-		"iS": 70191,
-		"oA": 0,
-		"oAP": "\/images\/alex.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/images\/alexlorenzi.gif": {
-		"ft": 4194304,
-		"iS": 6170,
-		"oA": 0,
-		"oAP": "\/images\/alexlorenzi.gif",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/images\/art_noveau.jpg": {
-		"ft": 16384,
-		"iS": 194284,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/images\/art_noveau.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/images\/bacco.jpg": {
-		"ft": 16384,
-		"iS": 220340,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/images\/bacco.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/images\/bio_small.jpg": {
-		"ft": 16384,
-		"iS": 68641,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/images\/bio_small.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/images\/bio_small.png": {
-		"ft": 32768,
-		"iS": 1414,
-		"oA": 0,
-		"oAP": "\/images\/bio_small.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/images\/casco_GT3_Cup.jpg": {
-		"ft": 16384,
-		"iS": 25225,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/images\/casco_GT3_Cup.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/images\/corsi_small.jpg": {
-		"ft": 16384,
-		"iS": 13675,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/images\/corsi_small.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/images\/corsi_small.png": {
-		"ft": 32768,
-		"iS": 2787,
-		"oA": 0,
-		"oAP": "\/images\/corsi_small.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/images\/giubbotto_Eagles.jpg": {
-		"ft": 16384,
-		"iS": 227197,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/images\/giubbotto_Eagles.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/images\/greca_decorazione_piscina.jpg": {
-		"ft": 16384,
-		"iS": 115256,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/images\/greca_decorazione_piscina.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/images\/Harley_Davidson_AMF80.jpg": {
-		"ft": 16384,
-		"iS": 42753,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/images\/Harley_Davidson_AMF80.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/images\/kustomite_small.jpg": {
-		"ft": 16384,
-		"iS": 125597,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/images\/kustomite_small.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/images\/mauritius.jpg": {
-		"ft": 16384,
-		"iS": 61547,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/images\/mauritius.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/images\/Navigator-logo.png": {
-		"ft": 32768,
-		"iS": 19591,
-		"oA": 0,
-		"oAP": "\/images\/Navigator-logo.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/images\/plaster-texture.jpg": {
-		"ft": 16384,
-		"iS": 91108,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/images\/plaster-texture.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/images\/porticato.jpg": {
-		"ft": 16384,
-		"iS": 123893,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/images\/porticato.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/images\/samantha-spirit.jpg": {
-		"ft": 16384,
-		"iS": 151960,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/images\/samantha-spirit.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/images\/sansone.jpg": {
-		"ft": 16384,
-		"iS": 23602,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/images\/sansone.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/images\/slides\/bacco.jpg": {
-		"ft": 16384,
-		"iS": 101930,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/images\/slides\/bacco.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/images\/slides\/casco-don-2.jpg": {
-		"ft": 16384,
-		"iS": 0,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/images\/slides\/casco-don-2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/images\/slides\/casco-don.jpg": {
-		"ft": 16384,
-		"iS": 0,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/images\/slides\/casco-don.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/images\/slides\/corsi.jpg": {
-		"ft": 16384,
-		"iS": 52308,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/images\/slides\/corsi.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/images\/slides\/denim-rebel.jpg": {
-		"ft": 16384,
-		"iS": 117895,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/images\/slides\/denim-rebel.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/images\/slides\/eagles.jpg": {
-		"ft": 16384,
-		"iS": 0,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/images\/slides\/eagles.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/images\/slides\/locandina-navigator.jpg": {
-		"ft": 16384,
-		"iS": 144660,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/images\/slides\/locandina-navigator.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/images\/slides\/mauritius.jpg": {
-		"ft": 16384,
-		"iS": 93301,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/images\/slides\/mauritius.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/images\/slides\/mobile-pappagalli.jpg": {
-		"ft": 16384,
-		"iS": 140673,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/images\/slides\/mobile-pappagalli.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/images\/slides\/portico-deco.jpg": {
-		"ft": 16384,
-		"iS": 253231,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/images\/slides\/portico-deco.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/images\/slides\/samantha-and-spirit.jpg": {
-		"ft": 16384,
-		"iS": 69897,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/images\/slides\/samantha-and-spirit.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/images\/slides\/sansone.jpg": {
-		"ft": 16384,
-		"iS": 95913,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/images\/slides\/sansone.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/images\/testaGreca_small.jpg": {
-		"ft": 16384,
-		"iS": 196129,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/images\/testaGreca_small.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/includes\/contact-me.php": {
+	"\/header2.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/includes\/contact-me.php",
-		"oF": 0
-		},
-	"\/includes\/paragraphs.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/includes\/paragraphs.php",
-		"oF": 0
-		},
-	"\/includes\/tiles.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/includes\/tiles.php",
+		"oAP": "\/header2.php",
 		"oF": 0
 		},
 	"\/js\/flickity.pkgd.js": {
@@ -966,6 +586,20 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"\/page-tag-thumbs.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-tag-thumbs.php",
+		"oF": 0
+		},
+	"\/page-test.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-test.php",
+		"oF": 0
 		},
 	"\/page.php": {
 		"cB": 0,
@@ -1114,6 +748,13 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"\/single-recensioni-e-interviste.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/single-recensioni-e-interviste.php",
+		"oF": 0
 		},
 	"\/single.php": {
 		"cB": 0,

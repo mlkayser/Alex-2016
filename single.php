@@ -11,8 +11,8 @@
                     <?php custom_breadcrumbs(); ?>       
                              									    
     				<!-- navigation -->
-    				<?php previous_post_link( '%link', '%title <span class="meta-nav">' . _x( '&rarr;', 'Previous post link') . '</span>',TRUE); ?>
-    				<?php next_post_link( '%link', '<span class="meta-nav">' . _x( '&larr;', 'Next post link') . '</span> %title',TRUE); ?>
+    				<?php previous_post_link( '%link', '%title <span class="meta-nav">' . _x( '&rarr;', 'Previous post link') . '</span>', TRUE, $taxonomy = 'post_tag'); ?>
+    				<?php next_post_link( '%link', '<span class="meta-nav">' . _x( '&larr;', 'Next post link') . '</span> %title', TRUE, $taxonomy = 'post_tag'); ?>
     				
     				<!-- thumbnails -->
     				<?php
@@ -65,7 +65,8 @@
 					<div id="single" class="bigPic">
 						<a id="bigPicLink" href="<?php echo $first_img_url; ?>">
 							<img id="bigPic" src="<?php echo $first_img_url; ?>" alt="<?php echo $img_caption; ?>" title="<?php echo $img_title; ?>">
-						</a>							 
+						</a>	
+						<?php the_title( '<h3>', '</h3>' ); ?>						 
 					</div>
     																
     			<?php endwhile; else: ?>
@@ -73,8 +74,8 @@
     			<?php endif; ?>
     		</div><!-- end loop -->	
 
-          </div><?php //end post ?>   	
 	   </div><?php // end wrapper ?>
+	</section>
 	   
    <?php require('includes/tiles.php'); ?>
 </div>

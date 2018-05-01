@@ -1,3 +1,7 @@
+<?php
+/* Template Name: page for tag listing */
+?>
+
 <?php require('header.php'); ?>
 
 <div class="page-wrapper">   
@@ -6,7 +10,7 @@
           <div id="page" class="page">  
 	          	             
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>					
-				<?php // page listing thumbs for tags
+				<?php 
 		        if ( is_page( array(
 					'dipinti-murali', 
 					'murales-e-trompe-loeil-per-piscine/', 
@@ -21,24 +25,23 @@
 	                $catImage = '/images/testaGreca_small.jpg';
 	                $alt = "Logo decorazioni e dipinti";
 	                ?>
-	                <h1>
+	                
+					<h1>
 						<img src="<?php echo get_template_directory_uri().$catImage; ?>" alt="<?php echo $alt; ?>" style="width:75px; height:auto;"> 
 						<?php the_title(); ?>
 					</h1>
-					<?php the_content(); ?>
 
 			    <?php } else { ?>                
 				    <h1><?php the_title(); ?></h1> 
-	                <?php the_content(); ?>  
-					<?php require('includes/contact-me.php'); ?>  
-					
 				<?php } ?>
+
+                <?php the_content(); ?>  
 			
             <?php endwhile; else: ?>
-			    <div class="textBox"><?php _e('Mi dispiace, la pagina che cerchi non esiste.'); ?></div>
-			    <?php require('includes/contact-me.php'); ?>  
+			    <div class="textBox"><?php _e('Mi dispiace, la pagina che cerchi non esiste.'); ?></div>								
             <?php endif; ?>
   		  		
+			 <?php require('includes/contact-me.php'); ?>  
 			 
           </div>           	
 	   </div>

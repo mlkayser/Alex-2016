@@ -2,7 +2,7 @@
 	<section id="tiles" class="aside left tiles">
 		<ul>
             <li>
-               <a href="<?php get_bloginfo(); ?>/category/trompe-loeil/">
+               <a href="<?php get_bloginfo(); ?>/trompe-loeil/">
                   <img src="<?php echo get_template_directory_uri(); ?>/images/slides/mauritius.jpg" alt="Isola Mauritius - Trompe L'Oeil dipinto a mano" />
                   <div class="caption">
                      <h2>Trompe L'Oeil</h2>
@@ -10,7 +10,7 @@
                </a>
             </li>
             <li>
-               <a href="<?php get_bloginfo(); ?>/category/murales/">
+               <a href="<?php get_bloginfo(); ?>/murales/">
                   <img src="<?php echo get_template_directory_uri(); ?>/images/slides/sansone.jpg" alt="Spiaggia di Sansone, Elba - Murales dipinto a mano" />              
                   <div class="caption">
                      <h2>Murales</h2>
@@ -18,7 +18,7 @@
                </a>         
             </li>
             <li>
-               <a href="<?php get_bloginfo(); ?>/category/affreschi/">
+               <a href="<?php get_bloginfo(); ?>/affreschi/">
                   <img src="<?php echo get_template_directory_uri(); ?>/images/slides/bacco.jpg" alt="Bacco - Affresco" class="adjust" />
                   <div class="caption">
                      <h2>Affreschi</h2>
@@ -26,23 +26,23 @@
                </a>
             </li>
             <li>
-               <a href="<?php get_bloginfo(); ?>/category/su-pareti/">
+               <a href="<?php get_bloginfo(); ?>/ornamenti-su-pareti/">
                   <img src="<?php echo get_template_directory_uri(); ?>/images/slides/portico-deco.jpg" alt="Decorazione porticato - Greche e Stemmi Araldici" class="adjust" />
                   <div class="caption">
-                     <h2>Ornamenti</h2>
+                     <h2>Ornamenti su pareti</h2>
                   </div>
                </a>
             </li>
             <li>
-               <a href="<?php get_bloginfo(); ?>/category/quadri/">
+               <a href="<?php get_bloginfo(); ?>/quadri/">
                   <img src="<?php echo get_template_directory_uri(); ?>/images/slides/samantha-and-spirit.jpg" alt="Samantha & Spirit - Ritratto su commissione" style="margin-left:-100%;" />
                   <div class="caption">
-                     <h2>Dipinti</h2>
+                     <h2>Quadri</h2>
                   </div>
                </a>
             </li>
             <li>
-               <a href="<?php get_bloginfo(); ?>/category/su-mobili/">
+               <a href="<?php get_bloginfo(); ?>/decorazioni-su-mobili/">
                   <img src="<?php echo get_template_directory_uri(); ?>/images/slides/mobile-pappagalli.jpg" alt="Mobile Art Noveau - Decorazioni su mobili" />
                   <div class="caption">
                      <h2>Decorazione Mobili</h2>
@@ -50,7 +50,7 @@
                </a>
             </li>
             <li>
-               <a href="<?php get_bloginfo(); ?>/category/moto/">
+               <a href="<?php get_bloginfo(); ?>/aerografie-su-carrozzerie-auto-moto/">
                   <img src="<?php echo get_template_directory_uri(); ?>/images/slides/denim-rebel.jpg" alt="Harley Davidson Denim Rebel - Aerografie su Auto e Moto" />
                   <div class="caption">
                      <h2>Auto e Moto</h2>
@@ -58,7 +58,7 @@
                </a>
             </li>
             <li>
-               <a href="<?php get_bloginfo(); ?>/category/caschi/">
+               <a href="<?php get_bloginfo(); ?>/aerografie-su-caschi/">
                   <img src="<?php echo get_template_directory_uri(); ?>/images/slides/casco-don.jpg" alt="Casco Don Alberto - Aerografie su caschi"  />
                   <div class="caption">
                      <h2>Caschi</h2>
@@ -66,7 +66,7 @@
                </a>
             </li>
             <li>
-               <a href="<?php get_bloginfo(); ?>/category/giubbotti-tshirts/">
+               <a href="<?php get_bloginfo(); ?>/aerografie-su-giubbotti-tshirts/">
                   <img src="<?php echo get_template_directory_uri(); ?>/images/slides/eagles.jpg" alt="Eagles - Giubbotti e Tshirts" class="adjust" />
                   <div class="caption">
                      <h2>Giubbotti e Tshirts</h2>

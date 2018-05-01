@@ -1,5 +1,12 @@
 <?php
-   
+
+
+// Version CSS file in a theme
+wp_enqueue_style( 'theme-styles', get_stylesheet_directory_uri() . '/style.css', array(), filemtime( get_stylesheet_directory() . '/style.css' ) );
+
+// Version JS file in a theme
+wp_enqueue_script( 'theme-scripts', get_stylesheet_directory_uri() . '/js/min/main-min.js', array('jquery'), filemtime( get_stylesheet_directory() . '/js/min/main-min.js' ) );   
+
 // activate thumbnail support
 add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size(190, 190);
@@ -234,6 +241,13 @@ function custom_breadcrumbs() {
        
 }
 
+// Changing excerpt more
+function new_excerpt_more($more) {
+    global $post;
+    return '… <a href="'. get_permalink($post->ID) . '">' . 'Continua &raquo;' . '</a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+   
 // thumbnail in dashboard list
 function custom_columns( $columns ) {
     $columns = array(
@@ -257,4 +271,85 @@ function custom_columns_data( $column, $post_id ) {
 	 }
 }
 add_action( 'manage_posts_custom_column' , 'custom_columns_data', 10, 2 ); 
+
+// thumbs shortcode
+function tag_thumbs_func( $atts ) {
+	if ($atts[tag]) $tag=$atts[tag];
+	else $tag='';
+
+	if ($atts[category]) $cat=$atts[category];
+	else $cat='';
+		
+	if ($atts[posts_per_page]) $postsPerPage = $atts[posts_per_page];
+	else $postsPerPage = -1;	
+
+	$output= '<section class="tag thumbs"><ul>';
+			
+	 $args=array(
+	 	'tag' => $tag,
+	 	'category_name' => $cat,
+	 	'showposts' => $postsPerPage
+	 );
+	 
+	 $my_query = new WP_Query($args);
+	 if( $my_query->have_posts() ) {
+	 	while ($my_query->have_posts()) : $my_query->the_post();				 				
+			$permalink = get_permalink($post->ID);
+			//$thumbnail_image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'thumbnail');
+
+		 	$output .=	'<li>';
+			$output .= '<a href="' . $permalink . '" title="' . the_title_attribute('echo=0') . '" >';
+			$output .= get_the_post_thumbnail($post->ID, 'thumbnail'); 
+			//$output .= get_the_post_thumbnail($post->ID, array( 200, 200));
+			$output .= '</a>';
+			$output .=	'</li>';
+		endwhile;
+    } 
+	wp_reset_query();
+
+	$output .= '</ul>';
+	if ($atts[link]) {
+		$output .= '<p style="clear:both">' . $atts[link] . '</p>';
+	}
+
+	$output .= '</section>';	
+
+    return $output;
+}
+add_shortcode( 'tag_thumbs', 'tag_thumbs_func' );
+
+// descrizione_corsi shortcode
+function desc_corsi_func( $atts ) {
+	$tag=$atts[tag];
+	
+	$output= '<p>Tutti i corsi si tengono a Bergamo e provincia a secondo della loro tipologia ed in base al numero dei partecipanti che parte da un minimo di 4 persone fino ad un massimo di 10. Tutta l’attrezzatura necessaria, sara’ disponibile per tutto il tempo del corso. Chi lo desidera puo’ portare un grembiule o vestiti adeguati. Serve solo tanto entusiasmo e voglia di fare!
+</p><ul class="corsi">
+<li>Assistenza tecnica on line tramite SKYPE e WHATSAPP per un anno dal termine del corso.</li>
+<li>Rilascio di un attestato di frequenza.</li> 
+<li>Disponibilita’ per corsi privati  personalizzati.</li>
+</ul>';
+    return $output;
+}
+add_shortcode( 'desc_corsi', 'desc_corsi_func' );
+
+// contact shortcode
+function contact_func( $atts ) {
+	$tag=$atts[tag];
+	
+	$output= '<p>Contattami per avere piú informazioni:<br><a href="mailto:alex@alexlorenzi.com"><i class="fa fa-envelope-o"></i> alex@alexlorenzi.com</a><br><a href="tel:348670092"><i class="fa fa-phone"></i> 348.6700.922</a><br><a href="https://api.whatsapp.com/send?phone=+393486700922"><i class="fa fa-whatsapp"> </i></a> <span class="separator">|</span> <a href="callto://+393486700922"><i class="fa fa-skype"></i> </a></p>';
+    return $output;
+}
+add_shortcode( 'contact', 'contact_func' );
+
+// custom template for single post in recensioni-e-interviste
+function get_custom_cat_template($single_template) {
+     global $post;
+ 
+       if ( in_category( 'recensioni-e-interviste' )) {
+          $single_template = dirname( __FILE__ ) . '/single-recensioni-e-interviste.php';
+     }
+     return $single_template;
+}
+add_filter( "single_template", "get_custom_cat_template" ) ;
+
 ?>
